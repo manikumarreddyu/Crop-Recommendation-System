@@ -23,8 +23,8 @@ def brain():
     values=[Nitrogen,Phosphorus,Potassium,Temperature,Humidity,Ph,Rainfall]
     
     if Ph>0 and Ph<=14 and Temperature<100 and Humidity>0:
-        joblib.load('crop_appp','r')
-        model = joblib.load(open('crop_appp','rb'))
+        joblib.load('models/crop_appp','r')
+        model = joblib.load(open('models/crop_appp','rb'))
         arr = [values]
         acc = model.predict(arr)
         # print(acc)
