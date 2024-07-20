@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "builds": [
+        {"src": "crop_app.py", "use": "@vercel/python"}
+    ],
+    "routes": [
+        {"src": "/(.*)", "dest": "crop_app.py"}
+    ]
+}
